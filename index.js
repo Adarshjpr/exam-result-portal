@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors()); // For production, you can restrict origin: { origin: "https://your-frontend.vercel.app" }
+app.use(cors({ origin: "https://result-frontend-git-main-adarshjprs-projects.vercel.app/" })); // For production, you can restrict origin: { origin: "https://your-frontend.vercel.app" }
 app.use(express.json());
 
 // MongoDB connection
