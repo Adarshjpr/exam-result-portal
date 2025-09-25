@@ -12,7 +12,7 @@ app.use(cors({ origin: "https://result-frontend-git-main-adarshjprs-projects.ver
 app.use(express.json());
 
 // MongoDB connection
-const uri = process.env.MONGO_URI;
+const uri = "mongodb+srv://adarsh:adarsh1234@cluster0.lethy.mongodb.net/uncodemy?retryWrites=true&w=majority";
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
